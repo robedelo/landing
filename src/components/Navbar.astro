@@ -1,5 +1,7 @@
 ---
 import { useTranslations, LANGUAGES } from "../i18n/utils";
+import esFlag from "../assets/flags/es.svg";
+import enFlag from "../assets/flags/en.svg";
 
 interface Props {
     lang?: string;
@@ -13,6 +15,8 @@ const links = [
     { name: t("nav.portfolio"), href: "#portfolio" },
     { name: t("nav.contact"), href: "#contact" },
 ];
+
+const currentFlag = lang === "es" ? esFlag : enFlag;
 ---
 
 <nav
@@ -27,23 +31,72 @@ const links = [
         >
             <span
                 class="self-center text-2xl font-bold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors"
-                >Agency<span class="text-blue-500">.</span></span
             >
+                Agency<span class="text-blue-500">.</span>
+            </span>
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <div class="flex items-center space-x-2 mr-4">
-                <a
-                    href="/es/"
-                    class={`text-sm font-medium ${lang === "es" ? "text-blue-400" : "text-gray-400 hover:text-white"} transition-colors`}
-                    >ES</a
+
+        <div
+            class="flex md:order-2 items-center space-x-3 md:space-x-0 rtl:space-x-reverse"
+        >
+            <!-- Language Selector -->
+            <div class="relative ml-4 mr-4 md:mr-0 group">
+                <button
+                    class="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-900/50 hover:bg-slate-800 transition-colors border border-white/10"
                 >
-                <span class="text-gray-600">|</span>
-                <a
-                    href="/en/"
-                    class={`text-sm font-medium ${lang === "en" ? "text-blue-400" : "text-gray-400 hover:text-white"} transition-colors`}
-                    >EN</a
+                    <img
+                        src={currentFlag.src}
+                        alt={lang}
+                        class="w-5 h-3.5 object-cover rounded-sm"
+                    />
+                    <span class="text-sm font-medium text-gray-300 uppercase"
+                        >{lang}</span
+                    >
+                    <svg
+                        class="w-4 h-4 text-gray-400 group-hover:rotate-180 transition-transform duration-200"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        ><path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path></svg
+                    >
+                </button>
+                <!-- Dropdown -->
+                <div
+                    class="absolute right-0 top-full pt-2 w-40 hidden group-hover:block group-focus-within:block z-50"
                 >
+                    <div
+                        class="bg-slate-900 border border-white/10 rounded-lg shadow-xl"
+                    >
+                        <a
+                            href="/es/"
+                            class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 transition-colors first:rounded-t-lg border-b border-white/5"
+                        >
+                            <img
+                                src={esFlag.src}
+                                alt="Español"
+                                class="w-5 h-3.5 object-cover rounded-sm"
+                            />
+                            <span class="text-sm text-gray-300">Español</span>
+                        </a>
+                        <a
+                            href="/en/"
+                            class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 transition-colors last:rounded-b-lg"
+                        >
+                            <img
+                                src={enFlag.src}
+                                alt="English"
+                                class="w-5 h-3.5 object-cover rounded-sm"
+                            />
+                            <span class="text-sm text-gray-300">English</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
             <button
                 data-collapse-toggle="navbar-default"
                 type="button"
@@ -68,6 +121,7 @@ const links = [
                 </svg>
             </button>
         </div>
+
         <div
             class="hidden w-full md:block md:w-auto md:order-1"
             id="navbar-default"
@@ -100,7 +154,7 @@ const links = [
 </nav>
 
 <script>
-    // Simple mobile menu toggle
+    // Mobile menu toggle
     const btn = document.querySelector(
         '[data-collapse-toggle="navbar-default"]',
     );
