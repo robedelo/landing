@@ -31,6 +31,40 @@
             }
         }
     },
+    "pricing": {
+    "title": "Tipos de páginas web",
+    "subtitle": "Elige la opción que mejor se adapte a tu proyecto",
+    "cta": "Solicitar información",
+    "items": {
+      "landing": {
+        "title": "Página de Presentación",
+        "description": "Una página sencilla para mostrar tu negocio, producto o evento.",
+        "price": "Desde 250€",
+        "features": {
+          "feature1": "Diseño atractivo y adaptado a móviles",
+          "feature2": "Sección de contacto básica"
+        }
+      },
+      "business": {
+        "title": "Página Corporativa",
+        "description": "Un sitio completo para empresas con varias secciones.",
+        "price": "Desde 700€",
+        "features": {
+          "feature1": "Secciones como Inicio, Servicios, Equipo y Contacto",
+          "feature2": "Formulario de contacto avanzado"
+        }
+      },
+      "login": {
+        "title": "Página con Área Privada",
+        "description": "Un sitio con acceso mediante usuario y contraseña, ideal para clientes o miembros.",
+        "price": "Desde 1200€",
+        "features": {
+          "feature1": "Sistema de registro e inicio de sesión",
+          "feature2": "Zona privada para contenidos exclusivos"
+        }
+      }
+    }
+  },
     "portfolio": {
         "title": "Trabajos Seleccionados",
         "subtitle": "Echa un vistazo a algunos de nuestros proyectos recientes.",
