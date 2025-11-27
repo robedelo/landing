@@ -1,0 +1,73 @@
+{
+    "nav": {
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "getStarted": "Get Started"
+    },
+    "hero": {
+        "badge": "Elevate Your Digital Presence",
+        "titlePrefix": "We Build",
+        "titleHighlight": "Digital Masterpieces",
+        "description": "Transform your ideas into reality with our premium web design and development services. We create websites that not only look amazing but also perform.",
+        "ctaStart": "Start Your Project",
+        "ctaView": "View Our Work"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "We offer a comprehensive range of services to help you succeed online.",
+        "items": {
+            "design": {
+                "title": "Web Design",
+                "description": "We create stunning, user-centric designs that captivate your audience and elevate your brand identity."
+            },
+            "development": {
+                "title": "Web Development",
+                "description": "Robust and scalable web applications built with the latest technologies to ensure performance and security."
+            },
+            "seo": {
+                "title": "SEO Optimization",
+                "description": "Improve your visibility on search engines and drive organic traffic to your website with our expert SEO strategies."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Selected Works",
+        "subtitle": "Check out some of our recent projects.",
+        "viewAll": "View All Projects",
+        "items": {
+            "ecommerce": {
+                "title": "E-commerce Platform",
+                "category": "Development"
+            },
+            "portfolio": {
+                "title": "Portfolio Website",
+                "category": "Design"
+            },
+            "dashboard": {
+                "title": "SaaS Dashboard",
+                "category": "App"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Trusted by Companies"
+    },
+    "contact": {
+        "title": "Ready to Start Your Project?",
+        "subtitle": "Let's discuss how we can help you achieve your digital goals.",
+        "emailLabel": "Email Address",
+        "messageLabel": "Message",
+        "emailPlaceholder": "you@example.com",
+        "messagePlaceholder": "Tell us about your project...",
+        "submit": "Send Message"
+    },
+    "footer": {
+        "description": "Crafting digital experiences that inspire and convert. We build premium websites for forward-thinking businesses.",
+        "servicesTitle": "Services",
+        "connectTitle": "Connect",
+        "rights": "All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}

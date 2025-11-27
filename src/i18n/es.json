@@ -1,0 +1,73 @@
+{
+    "nav": {
+        "services": "Servicios",
+        "portfolio": "Portafolio",
+        "contact": "Contacto",
+        "getStarted": "Empezar"
+    },
+    "hero": {
+        "badge": "Eleva tu Presencia Digital",
+        "titlePrefix": "Construimos",
+        "titleHighlight": "Obras Maestras Digitales",
+        "description": "Transforma tus ideas en realidad con nuestros servicios premium de diseño y desarrollo web. Creamos sitios web que no solo se ven increíbles, sino que también funcionan.",
+        "ctaStart": "Inicia tu Proyecto",
+        "ctaView": "Ver Nuestro Trabajo"
+    },
+    "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Ofrecemos una amplia gama de servicios para ayudarte a tener éxito en línea.",
+        "items": {
+            "design": {
+                "title": "Diseño Web",
+                "description": "Creamos diseños impresionantes centrados en el usuario que cautivan a tu audiencia y elevan la identidad de tu marca."
+            },
+            "development": {
+                "title": "Desarrollo Web",
+                "description": "Aplicaciones web robustas y escalables construidas con las últimas tecnologías para garantizar rendimiento y seguridad."
+            },
+            "seo": {
+                "title": "Optimización SEO",
+                "description": "Mejora tu visibilidad en los motores de búsqueda y atrae tráfico orgánico a tu sitio web con nuestras estrategias expertas de SEO."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Trabajos Seleccionados",
+        "subtitle": "Echa un vistazo a algunos de nuestros proyectos recientes.",
+        "viewAll": "Ver Todos los Proyectos",
+        "items": {
+            "ecommerce": {
+                "title": "Plataforma E-commerce",
+                "category": "Desarrollo"
+            },
+            "portfolio": {
+                "title": "Sitio Web Portafolio",
+                "category": "Diseño"
+            },
+            "dashboard": {
+                "title": "Panel SaaS",
+                "category": "App"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Empresas que Confían en Nosotros"
+    },
+    "contact": {
+        "title": "¿Listo para Iniciar tu Proyecto?",
+        "subtitle": "Hablemos sobre cómo podemos ayudarte a alcanzar tus objetivos digitales.",
+        "emailLabel": "Dirección de Correo",
+        "messageLabel": "Mensaje",
+        "emailPlaceholder": "tu@ejemplo.com",
+        "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+        "submit": "Enviar Mensaje"
+    },
+    "footer": {
+        "description": "Creando experiencias digitales que inspiran y convierten. Construimos sitios web premium para empresas con visión de futuro.",
+        "servicesTitle": "Servicios",
+        "connectTitle": "Conectar",
+        "rights": "Todos los derechos reservados.",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio"
+    }
+}
