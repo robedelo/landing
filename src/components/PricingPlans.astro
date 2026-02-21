@@ -1,0 +1,154 @@
+---
+import { useTranslations, LANGUAGES } from "../i18n/utils";
+
+interface Props {
+    lang?: string;
+}
+
+const { lang = "es" } = Astro.props;
+const t = useTranslations(lang as keyof typeof LANGUAGES);
+---
+<section
+    id="pricing"
+    class="py-24 bg-gradient-to-b from-slate-950 to-slate-900"
+>
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-extrabold text-white mb-4">
+            {t("pricing.title")}
+        </h2>
+        <p class="text-lg text-gray-400 mb-16">
+            {t("pricing.subtitle")}
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+            <div
+                class="bg-slate-900 rounded-2xl shadow-xl border border-slate-800 p-10 flex flex-col hover:scale-105 transition-transform"
+            >
+                <div class="mb-6 flex justify-center">
+                    <svg
+                        class="w-12 h-12 text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 7h18M3 12h18M3 17h18"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">
+                    {t("pricing.items.landing.title")}
+                </h3>
+                <p class="text-gray-400 mb-6">
+                    {t("pricing.items.landing.description")}
+                </p>
+                <div class="text-3xl font-extrabold text-blue-400 mb-6">
+                    {t("pricing.items.landing.price")}
+                </div>
+                <ul class="text-gray-300 text-left mb-6 space-y-2">
+                    <li>
+                        ✔ {t("pricing.items.landing.features.feature1")}
+                    </li>
+                    <li>
+                        ✔ {t("pricing.items.landing.features.feature2")}
+                    </li>
+                </ul>
+                <a
+                    href="#contact"
+                    class="mt-auto px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all"
+                >
+                    {t("pricing.cta")}
+                </a>
+            </div>
+
+            <!-- Website with Private Area (destacado en el centro) -->
+
+            <div
+                class="bg-gradient-to-tr from-purple-700 to-purple-500 rounded-2xl shadow-2xl p-10 flex flex-col transform scale-105 hover:scale-110 transition-transform"
+            >
+                <div class="mb-6 flex justify-center">
+                    <svg
+                        class="w-12 h-12 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">
+                    {t("pricing.items.login.title")}
+                </h3>
+                <p class="text-gray-100 mb-6">
+                    {t("pricing.items.login.description")}
+                </p>
+                <div class="text-3xl font-extrabold text-white mb-6">
+                    {t("pricing.items.login.price")}
+                </div>
+                <ul class="text-gray-100 text-left mb-6 space-y-2">
+                    <li>
+                        ✔ {t("pricing.items.login.features.feature1")}
+                    </li>
+                    <li>
+                        ✔ {t("pricing.items.login.features.feature2")}
+                    </li>
+                </ul>
+                <a
+                    href="#contact"
+                    class="mt-auto px-6 py-3 bg-white text-purple-700 rounded-lg font-semibold hover:bg-gray-200 transition-all"
+                >
+                    {t("pricing.cta")}
+                </a>
+            </div>
+
+            <!-- Business Website -->
+            <div
+                class="bg-slate-900 rounded-2xl shadow-xl border border-slate-800 p-10 flex flex-col hover:scale-105 transition-transform"
+            >
+                <div class="mb-6 flex justify-center">
+                    <svg
+                        class="w-12 h-12 text-purple-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">
+                    {t("pricing.items.business.title")}
+                </h3>
+                <p class="text-gray-400 mb-6">
+                    {t("pricing.items.business.description")}
+                </p>
+                <div class="text-3xl font-extrabold text-purple-400 mb-6">
+                    {t("pricing.items.business.price")}
+                </div>
+                <ul class="text-gray-300 text-left mb-6 space-y-2">
+                    <li>
+                        ✔ {t("pricing.items.business.features.feature1")}
+                    </li>
+                    <li>
+                        ✔ {t("pricing.items.business.features.feature2")}
+                    </li>
+                </ul>
+                <a
+                    href="#contact"
+                    class="mt-auto px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition-all"
+                >
+                    {t("pricing.cta")}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

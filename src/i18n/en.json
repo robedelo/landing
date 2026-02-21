@@ -50,6 +50,40 @@
             }
         }
     },
+     "pricing": {
+    "title": "Types of Websites",
+    "subtitle": "Choose the option that best fits your project",
+    "cta": "Request information",
+    "items": {
+      "landing": {
+        "title": "Landing Page",
+        "description": "A simple page to showcase your business, product, or event.",
+        "price": "From $250",
+        "features": {
+          "feature1": "Attractive, mobile-friendly design",
+          "feature2": "Basic contact section"
+        }
+      },
+      "business": {
+        "title": "Business Website",
+        "description": "A complete site for companies with multiple sections.",
+        "price": "From $700",
+        "features": {
+          "feature1": "Sections like Home, Services, Team, and Contact",
+          "feature2": "Advanced contact form"
+        }
+      },
+      "login": {
+        "title": "Website with Private Area",
+        "description": "A site with user login, perfect for clients or members.",
+        "price": "From $1200",
+        "features": {
+          "feature1": "User registration and login system",
+          "feature2": "Private area for exclusive content"
+        }
+      }
+    }
+  },
     "testimonials": {
         "title": "Trusted by Companies"
     },
