@@ -1,0 +1,2 @@
+# Este archivo le dice a GitHub Pages que no use Jekyll para procesar el sitio
+# Esto es importante para sitios generados por frameworks como Astro
